@@ -38,9 +38,12 @@ body{
     max-width: 600px;
     width: 100%;
     padding: 0;
-    text-align: left;
+    /* text-align: left; */
+    text-align: center;
     position: relative;
     z-index: 5;
+    margin-left: 50px;
+    margin-top: 50px;
 }
 
 .slide-title{
@@ -72,7 +75,7 @@ body{
     display: block;
     margin: 10px auto 0;
     /* margin: auto; */
-    border-radius: 0;
+    /* border-radius: 0; */
     /* box-shadow: 0 4px 8px rgb(0, 0, 0, 0.2); */
     /* padding: -25px; */
 }
@@ -81,7 +84,7 @@ body{
     max-width:750px;
     width: 100%;
     margin-left: auto;
-    margin-right: 340px;
+    margin-right: 150px; /* Era 340 alterado para 150*/
     text-align: center; 
     /* position: relative;  */
     /* z-index: 5;  */
@@ -111,7 +114,7 @@ body{
 
 .slide-imageOne{
     max-width: 150px;
-    margin: -30px;
+    margin: 10px auto; /* Era -30 alterado para 10px auto*/
 }
 
 .swiper-slide-contentTwo{
@@ -127,19 +130,33 @@ body{
     margin-top: 10px;   
 }
 
-.slide-titleTwo{
+/* .slide-titleTwo{ */
     /* text-align: right; */
-    color: #e18e82;
-    font-size: 60px;
-    font-family: "Rubik Vinyl", system-ui;
-    font-weight: 400;
-    margin-bottom: 10px;
-}
+    /* color: #e18e82; */
+    /* font-size: 60px; */
+    /* font-family: "Rubik Vinyl", system-ui; */
+    /* font-weight: 400; */
+    /* margin-bottom: 10px; */
+/* } */
 
-.slide-textTwo-p{
+/* .slide-textTwo-p{ */
     /* margin-top: 40px; */
     /* text-align: center; */
-    background-color: rgba(255, 255, 255, 0.3);
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    /* padding: 15px; */
+    /* margin: 10px auto; */
+    /* font-size: 22px; */
+    /* line-height: 1.6; */
+    /* border-radius: 8px; */
+    /* max-width: 700px; */
+    /* text-align: center; */
+    /* white-space: pre-line; */
+/* } */
+
+/* Certifique-se de que o texto do Slide 3 tenha um fundo para melhorar a legibilidade sobre a imagem de fundo*/
+.slide-textTwo, /* O parágrafo principal não tinha estilo */
+.slide-textTwo-p{
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo claro para o texto */
     padding: 15px;
     margin: 10px auto;
     font-size: 22px;
@@ -178,7 +195,7 @@ body{
 
 @media (max-width: 768px){
     .swiper{
-        height: 70vh; /* Mantido como você solicitou */
+        height: 100vh; /* Mantido como você solicitou */
     }
 
     .swiper-slide{
@@ -188,10 +205,10 @@ body{
         padding: 20px;
     }
 
-    .swiper-slide-content {
-        max-width: 100%; /* Ocupa um pouco mais de espaço horizontal em telas menores */
-        width: 100%;
-    }
+    /* .swiper-slide-content { */
+        /* max-width: 100%; Ocupa um pouco mais de espaço horizontal em telas menores */
+        /* width: 100%; */
+    /* } */
 
     /* .slide-title { */
         /* font-size: 36px; Reduz o tamanho do título em mobile */
@@ -200,6 +217,7 @@ body{
     .slide-title,
     .slide-titleTwo {
         font-size: 36px;
+        margin-bottom: 10px;
     }
 
 
@@ -211,16 +229,17 @@ body{
 
     .slide-text,
     .slide-textOne,
-    .slide-textTwo {
+    .slide-textTwo,
+    .slide-textTwo-p{
     background-color: rgba(255, 255, 255, 0.9);
     padding: 15px;
     margin: 10px auto;
-    font-size: 22px;
-    line-height: 1.6;
+    font-size: 16px;
+    line-height: 1.5;
     border-radius: 8px;
-    max-width: 700px;
+    max-width: 90%;
     text-align: center;
-    white-space: pre-line; /* permite quebra com \n no HTML */
+    /* white-space: pre-line; permite quebra com \n no HTML */
     }
 
     /* .slide-image { */
@@ -245,64 +264,65 @@ body{
         margin-right: 0;
     }
 
-   .slide-textOne {
+   /* .slide-textOne {
     font-size: 16px;
     padding: 10px;
     margin: 10px auto;
-    }
+    } */
 
     .slide-textOne-p {
         font-size: 20px;
-        margin-top: 20px;
+        margin-top: 15px;
     }
 
+    .slide-image,
     .slide-imageOne{
+        max-width: 150px;
+        height: auto;
         margin: 10px auto;
+        display: block;
+        /* margin: 10px auto; */
     }
 }
 
 /*Responsividade Two*/
 
 @media (max-width: 768px) {
+    .swiper-slide-content,
     .swiper-slide-contentOne,
     .swiper-slide-contentTwo {
         max-width: 100%;
         width: 100%;
         margin: 0 auto;
-        padding: 10px;
+        padding: 0px;
         text-align: center;
-        font-size: 20px;
+        /* font-size: 20px; */
         /* margin-right: 0;
         margin-left: 0;
         font-size: 18px;
         padding: 10px; */
     }
 
-    .slide-titleTwo {
-        font-size: 36px;
+    /* .slide-titleTwo { */
+        /* font-size: 36px; */
         /* text-align: center; */
-    }
+    /* } */
 
-    .slide-textOne,
-    .slide-textTwo-p {
-        font-size: 16px;
-        margin: 10px;
-        text-align: center;
+    /* .slide-textOne, */
+    /* .slide-textTwo-p { */
+        /* font-size: 16px; */
+        /* margin: 10px; */
+        /* text-align: center; */
         /* font-size: 20px;
         color: #d94f4f;
         font-weight: bold;
         margin-top: 20px; */
-    }
+    /* } */
 
-    .slide-textOne-p {
-        font-size: 18px;
-        margin-top: 20px;
-    }
-
-    .slide-imageOne {
+    /* .slide-imageOne {
         max-width: 150px;
         margin: 10px auto;
         display: block;
-    }
+    } */
 }
 
