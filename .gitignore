@@ -1,0 +1,50 @@
+# Sistema / SO
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+*.code-workspace
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Node / dependências / builds (se eventualmente usar ferramentas de build)
+node_modules/
+dist/
+.build/
+coverage/
+
+# Arquivos de ambiente (segredos)
+.env
+.env.local
+.env.*.local
+
+# Arquivos temporários / swap
+*.swp
+*.tmp
+*.temp
+*~ 
+# Windows thumbnail cache
+ehthumbs.db
+
+# Git LFS meta (se usar)
+.gitattributes
+
+# Pastas ou arquivos gerados por ferramentas (exemplos)
+/.cache
+/.parcel-cache
+
+# Arquivos de build do Netlify (se gerar)
+.netlify/
+
+# Ignorar arquivos binários grandes (opcional)
+# *.psd
+# *.ai
+
+# Observação: mantenha as imagens do site (assets/images) no repositório se quiser que o site funcione no Netlify.
+# Se você gerar imagens/otimizações localmente e não quiser subir as fontes originais, adicione aqui os padrões correspondentes.
